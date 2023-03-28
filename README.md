@@ -7,10 +7,8 @@ It's a personal project where i plan to develop an website where i'll disponibil
 +- API
     |
     +- Authenticator
-    |    |
-    |    +- Storage
     |
-    +- AI Model A
+    +- AI Model N
 ```
 
 ## Descriptions
@@ -21,13 +19,9 @@ This server will handle all the requests sent to interact with the AI models ava
 
 ### Authenticator service description
 
-This service will receive requests from the API server regarding to authentication and permissions of users, and communicate with the 'Database' service.
+This service will receive requests from the API server regarding to authentication and permissions of users, and communicate with the storage servers (Redis, MongoDB, ...).
 
-### Storage service description
-
-This service will provide a series of functions for other services to interact with storage servers (mongoDB, redis, ...).
-
-### AI Model A service description
+### AI Model N service description
 
 By now, this service is just a placeholder to indicate that there'll be N AI models availabe for users to interact. 
 
@@ -59,17 +53,3 @@ These are lists with no description of the public and private availabe endpoints
 - getUserSession
 - createUserSession
 - deleteUserSession
-
-### Storage service endpoints
-
-#### (Redis, ...)
-- getSession
-- createSession
-- deleteSession
-- updateSession
-
-#### (MongoDB, ...)
-- getUser
-- createUser
-- deleteUser
-- updateUser
