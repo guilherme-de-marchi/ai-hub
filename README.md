@@ -8,9 +8,7 @@ It's a personal project where i plan to develop an website where i'll disponibil
     |
     +- Authenticator
     |    |
-    |    +- Session
-    |    |
-    |    +- Database
+    |    +- Storage
     |
     +- AI Model A
 ```
@@ -25,13 +23,9 @@ This server will handle all the requests sent to interact with the AI models ava
 
 This service will receive requests from the API server regarding to authentication and permissions of users, and communicate with the 'Database' service.
 
-### Session service description
+### Storage service description
 
-This service will provide a series of functions for other services to interact with the Redis server.
-
-### Database service description
-
-This service will provide a series of functions for other services to interact with the PostgreSQL server.
+This service will provide a series of functions for other services to interact with storage servers (mongoDB, redis, ...).
 
 ### AI Model A service description
 
@@ -66,15 +60,15 @@ These are lists with no description of the public and private availabe endpoints
 - createUserSession
 - deleteUserSession
 
-### Session service endpoints
+### Storage service endpoints
 
+#### (Redis, ...)
 - getSession
 - createSession
 - deleteSession
 - updateSession
 
-### Database service endpoints
-
+#### (MongoDB, ...)
 - getUser
 - createUser
 - deleteUser
