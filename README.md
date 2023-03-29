@@ -1,3 +1,6 @@
+! PROJECT MOVED TO https://github.com/ai-lobby
+! reasons on https://github.com/Guilherme-De-Marchi/ai-hub/issues/6#issue-1644858257
+
 # ai-hub
 It's a personal project where i plan to develop an website where i'll disponibilize access to interact with n AI models. The models will be running on microservices, and the api will communicate with them through gRPC.
 
